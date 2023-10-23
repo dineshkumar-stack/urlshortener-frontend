@@ -1,0 +1,10 @@
+.chart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 2vh;
+    margin: 5vh 0px 10vw 10vw;
+    max-height: 470px;
+}

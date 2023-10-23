@@ -1,0 +1,14 @@
+.bottomform {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: auto auto;
+    margin-top: -20px;
+}
+
+.bottomform:nth-child(1) {
+    text-align: left;
+}
+
+.bottomform:nth-child(2) {
+    text-align: right;
+}

@@ -1,0 +1,67 @@
+.Dashboard {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin: 10vh auto;
+    /* background-color: aliceblue; */
+    padding: 1vh 1vw;
+}
+
+.longURL h1 {
+    text-align: center;
+}
+
+.longURL input {
+    width: 50vw;
+    margin: 10px;
+    padding: 5px;
+}
+
+.longURL button {
+    padding: 5px;
+    width: auto;
+}
+
+.longURL button:active {
+    background-color: #859e05;
+}
+
+.shortURL {
+    text-align: center;
+}
+
+.shortURL button {
+    background-color: #BCCE63;
+    box-shadow: 0px 3px;
+    cursor: pointer;
+    padding: 5px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    margin: 1vw;
+    width: auto;
+
+}
+
+.shortURL button:hover {
+    background-color: #859e05;
+}
+
+.shortURL button:active {
+    background-color: #3e8e41;
+    box-shadow: 0px 1px;
+    transform: translateY(2px)
+}
+
+.shortURL a:hover {
+    color: #013374;
+}
+
+.shortURL a:visited {
+    color: green;
+}
+
+.longURL input {
+    border: 1px dotted black;
+}

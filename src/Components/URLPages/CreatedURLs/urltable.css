@@ -1,0 +1,16 @@
+.AllURLs h1 {
+    text-align: center;
+}
+
+th,
+td {
+    border: 1px double rgb(0, 0, 84);
+    border-radius: 10px;
+    text-align: center;
+    padding: 5px;
+}
+
+.table {
+    display: flex;
+    justify-content: center;
+}

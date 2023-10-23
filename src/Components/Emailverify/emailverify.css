@@ -1,0 +1,67 @@
+.emailverify {
+    display: flex;
+    flex-direction: row;
+    gap: 3vw;
+    margin: 0 0 5vh 0;
+}
+
+body {
+    overflow: scroll;
+}
+
+.reset {
+    width: auto;
+    border-radius: 5px;
+}
+
+.emailverify button {
+    width: auto;
+    border-radius: 5px;
+    background-color: #94b104c1;
+    height: 45px;
+    width: 150px;
+}
+
+
+label {
+    margin-right: 10px;
+}
+
+.emailverify input {
+    width: 350px;
+    border-radius: 5px;
+    font-size: medium;
+    margin-top: 7px;
+}
+
+label {
+    font-size: 18px;
+}
+
+@media screen and (max-width:670px) and (min-width:500px) {
+
+    .emailverify input {
+        width: 200px;
+    }
+
+    body {
+        overflow: scroll;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .emailverify {
+        display: flex;
+        flex-direction: column;
+    }
+
+    input {
+        width: 200px;
+        margin-bottom: 0px;
+    }
+
+    body {
+        overflow: scroll;
+    }
+
+}
