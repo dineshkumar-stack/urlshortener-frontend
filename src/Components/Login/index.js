@@ -51,11 +51,8 @@ function Login() {
     return (
         <div className='form'>
             <div className='brand'>
-                <img className="logo" src={logo} alt="logo" />
-                <h2>URL Shortener</h2>
             </div>
             <form className="container" onSubmit={(e) => handleLogin(e)}>
-                <h1>Welcome...</h1>
                 <hr />
                 <Inputtag type={"email"} placeholder={"enter email"} name={"Email"} onChange={(e) => handleTypeing(e)} />
                 <Inputtag type={"password"} placeholder={"enter password"} name={"Password"} onChange={(e) => handleTypeing(e)} />

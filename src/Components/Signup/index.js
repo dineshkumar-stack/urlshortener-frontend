@@ -8,7 +8,7 @@ import { useNavigate } from 'react-router-dom'
 import logo from "../Image/Icon.jpg"
 
 function reducer(state, action) {
-    //  console.log("state", state, "action", action)
+     console.log("state", state, "action", action)
 
     switch (action.type) {
         case "FIRST": {
@@ -78,13 +78,10 @@ function Signup() {
     return (
         <div className='form'>
             <div className='brand'>
-                <img className="logo" src={logo} alt="logo" />
-                <h2>URL Shortener</h2>
             </div>
             <form >
                 <div className='container'>
                     <h1>Sign Up</h1>
-                    <p>Please fill in this form to create an account.</p>
                     <hr />
                     <Inputtag type={"text"} placeholder={"enter first name"} name={"First Name"} onChange={(e) => dispatch({ type: "FIRST", payload: e.target.value })} />
                     <Inputtag type={"text"} placeholder={"enter last name"} name={"Last Name"} onChange={(e) => dispatch({ type: "LAST", payload: e.target.value })} />

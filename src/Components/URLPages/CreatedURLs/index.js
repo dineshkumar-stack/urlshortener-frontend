@@ -32,9 +32,9 @@ function CreatedURLs() {
         getData()
     }, [])
 
-    // const handleOnClick = (e) => {
-    //     window.open(e.target.value)
-    // }
+    const handleOnClick = (e) => {
+        window.open(e.target.value)
+    }
 
 
     return (
@@ -58,7 +58,7 @@ function CreatedURLs() {
                                 <tbody key={val.shorturl}>
                                     <tr>
                                         <td><a href={val.longurl} target='_blank'>{val.longurl}</a></td>
-                                        <td><a href={`Dinesh/${val.shorturl}`} target='_blank' rel="noopener noreferrer">{`Dinesh/${val.shorturl}`}</a></td>
+                                        <td><a href={`https://urlshortener-backend-star.onrender.com/${val.shorturl}`} target='_blank' rel="noopener noreferrer">{`https://urlshortener-backend-star.onrender.com/${val.shorturl}`}</a></td>
                                         <td>{val.visitedhistory.length}</td>
                                     </tr>
                                 </tbody>
