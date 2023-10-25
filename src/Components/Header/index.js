@@ -2,7 +2,6 @@ import React, { useEffect, useRef, useState } from 'react';
 import './header.css';
 import avatar from "../Image/User-avatar.svg.png"
 import { useNavigate } from 'react-router-dom';
-import logo from "../Image/Icon.jpg"
 
 
 // Custom hook to handle click outside behavior
