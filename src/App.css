@@ -10,7 +10,7 @@ body {
   font-family: 'Roboto', 'Open Sans', 'Montserrat', sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  background-color: #dde5ea;
+  background-color: #ffffff;
   margin: 0%;
   overflow: scroll;
 }
@@ -72,13 +72,13 @@ input[type=email] {
   margin: 5px 0 22px 0;
   display: inline-block;
   border: none;
-  background: #f1f1f1;
+  background: #ffffff;
 }
 
 input[type=text]:focus,
 input[type=password]:focus,
 input[type=email]:focus {
-  background-color: #ddd;
+  background-color: #f8f8f8;
   outline: none;
 }
 
@@ -89,7 +89,7 @@ hr {
 
 /* Set a style for all buttons */
 button {
-  background-color: #BCCE63;
+  background-color: #bbe2f1;
   color: rgb(10, 10, 10);
   padding: 14px 20px;
   margin: 8px 0;
@@ -144,5 +144,5 @@ button:hover {
 }
 
 .brand h2 {
-  color: #0065EA;
+  color: #a8e3f2;
 }

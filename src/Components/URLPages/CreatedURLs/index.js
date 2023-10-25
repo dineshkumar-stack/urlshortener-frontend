@@ -20,7 +20,7 @@ function CreatedURLs() {
             if (err.response.data.message === "Invalid Authorization") {
                 const confirmed = window.confirm("Please login to continue")
                 if (confirmed) {
-                    navigate("/login")
+                    navigate("/")
                 } else {
                     navigate("/urlshortener")
                 }

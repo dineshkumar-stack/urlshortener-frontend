@@ -72,7 +72,7 @@ function Signup() {
     }
 
     const handleLogin = () => {
-        navigate('/login');
+        navigate('/');
     }
 
     return (
@@ -83,10 +83,10 @@ function Signup() {
                 <div className='container'>
                     <h1>Sign Up</h1>
                     <hr />
-                    <Inputtag type={"text"} placeholder={"enter first name"} name={"First Name"} onChange={(e) => dispatch({ type: "FIRST", payload: e.target.value })} />
-                    <Inputtag type={"text"} placeholder={"enter last name"} name={"Last Name"} onChange={(e) => dispatch({ type: "LAST", payload: e.target.value })} />
-                    <Inputtag type={"email"} placeholder={"enter email"} name={"Email address"} onChange={(e) => dispatch({ type: "EMAIL", payload: e.target.value })} />
-                    <Inputtag type={"password"} placeholder={"password"} name={"Password"} onChange={(e) => dispatch({ type: "PASSWORD", payload: e.target.value })} />
+                    <Inputtag type={"text"} placeholder={"First name"} name={"First Name"} onChange={(e) => dispatch({ type: "FIRST", payload: e.target.value })} />
+                    <Inputtag type={"text"} placeholder={"Last name"} name={"Last Name"} onChange={(e) => dispatch({ type: "LAST", payload: e.target.value })} />
+                    <Inputtag type={"email"} placeholder={"Email"} name={"Email address"} onChange={(e) => dispatch({ type: "EMAIL", payload: e.target.value })} />
+                    <Inputtag type={"password"} placeholder={"Password"} name={"Password"} onChange={(e) => dispatch({ type: "PASSWORD", payload: e.target.value })} />
                     {mailSent && <p style={{ textDecoration: "none" }} className='mailsent'>Mail Sent</p>}
                     <Button type={"submit"} name={"SignUp"} onClick={(e) => handleSignUp(e)} />
                 </div>

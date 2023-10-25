@@ -18,7 +18,7 @@ function URLShortener() {
                 const token = localStorage.getItem("token")
                 const config = { headers: { "x-auth-token": token } }
                 const response = await longURLApi({ longurl: longURL }, config)
-                // console.log(response.data)
+                console.log(response.data)
                 setShortURL(`https://urlshortener-backend-star.onrender.com/${response.data.data}`)
             } else {
                 alert("Enter URL")
@@ -29,13 +29,13 @@ function URLShortener() {
             if (err.response.data.message === "Invalid Authorization") {
                 const confirmed = window.confirm("Please login to continue")
                 if (confirmed) {
-                    navigate("/login")
+                    navigate("/")
                 }
             }
             if (err.response.data.message === "Token expired") {
                 alert("Token expired login again")
                 localStorage.clear()
-                navigate("/login")
+                navigate("/")
             }
         }
 

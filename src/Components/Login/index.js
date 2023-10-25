@@ -4,7 +4,6 @@ import Button from '../Button'
 import { useReducer } from 'react'
 import { loginApi } from '../Api'
 import { useNavigate } from 'react-router-dom'
-import logo from "../Image/Icon.jpg"
 import "./login.css";
 
 const reducer = (state, action) => {
@@ -20,7 +19,6 @@ const reducer = (state, action) => {
             return state;
     }
 }
-
 
 function Login() {
 
@@ -54,12 +52,12 @@ function Login() {
             </div>
             <form className="container" onSubmit={(e) => handleLogin(e)}>
                 <hr />
-                <Inputtag type={"email"} placeholder={"enter email"} name={"Email"} onChange={(e) => handleTypeing(e)} />
-                <Inputtag type={"password"} placeholder={"enter password"} name={"Password"} onChange={(e) => handleTypeing(e)} />
+                <Inputtag type={"email"} placeholder={"Email"} name={"Email"} onChange={(e) => handleTypeing(e)} />
+                <Inputtag type={"password"} placeholder={"Password"} name={"Password"} onChange={(e) => handleTypeing(e)} />
                 <Button type={"submit"} name={"Login"} />
                 <div className='bottomform'>
                     <p onClick={() => navigate("/forgotpassword/emailverify")}>Forgot Password?</p>
-                    <p onClick={() => navigate("/")}>Sign Up?</p>
+                    <p onClick={() => navigate("/signup")}>Sign Up?</p>
                 </div>
             </form>
         </div>

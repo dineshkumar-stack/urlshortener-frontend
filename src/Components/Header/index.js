@@ -40,13 +40,12 @@ function Header() {
 
     const handleLogout = () => {
         localStorage.clear()
-        navigate("/login")
+        navigate("/")
     }
 
     return (
         <div className='header'>
             <div className="header_left">
-                <img className='logo' src={logo} alt="logo" onClick={() => navigate("/urlshortener")} />
                 <h2 onClick={() => navigate("/urlshortener")}>URL Shortener</h2>
             </div>
             <div className="header_center">
@@ -71,8 +70,8 @@ function Header() {
                 </div>
             ) :
                 (<div className="header_right">
-                    <button onClick={() => navigate("/login")}>Log in</button>
-                    <button onClick={() => navigate("/")}>Sign up</button>
+                    <button onClick={() => navigate("/")}>Log in</button>
+                    <button onClick={() => navigate("/signup")}>Sign up</button>
                 </div>)}
         </div>
     )
